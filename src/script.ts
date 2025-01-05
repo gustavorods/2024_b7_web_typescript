@@ -1,7 +1,3 @@
-// forma mais utilizada
-let nome: string[] = ['Gustavo', "Rodrigues"];
-let idade: number[] = [1,2,3,3];
+let coisas: any = ["Gustavo", "Rods", "Gu"];
 
-// Outra forma
-let numeros: Array<number> = [12,20,5];
-let nomes: Array<string> = ["Gu", 'Rods'];
+coisas.push(76);
