@@ -1,24 +1,19 @@
-function resumo(
-    usuario: {
-        nome: string, 
-        idade: number, 
-        caracteristicas: {
-        olhos: string
-    }} 
-
-) 
-{ 
-    return `Olá ${usuario.nome} você tem ${usuario.idade} anos 
-    \n suas caracteristicas são olhos ${usuario.caracteristicas.olhos}`;
+// Função que faz a requisição
+function fazerReq(url: string, method: 'GET' | 'POST') {
+    // ...
 }
 
-let pessoa = {
-    nome: "Gustavo",
-    idade: 18,
-    caracteristicas: {
-        olhos: "Marrom",
-        cabelo: "Ondulado"
-    }
-};
+// Uma estrutura para nosso objeto
+type RequestDetails = { 
+    url: string,
+    method: 'GET' | 'POST'
+}
 
-resumo(pessoa);
+// Objeto usando como base uma estrutura ja feita
+let config: RequestDetails =  {
+    url: "https://google.com.br",
+    method: "GET"
+}
+
+
+fazerReq(config.url, config.method);
