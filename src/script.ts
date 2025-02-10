@@ -1,17 +1,5 @@
-type MathFunction = (n1:number, n2:number) => number; // recebe dois parametros numericos e retorna um número
+type TypeFuncao = (n1:number) => void;
 
-const somar: MathFunction = (n1,n2) => { // geralmente quando usamos type functions, usamos const
-    return n1+n2;
-}
-
-const subtrair: MathFunction = (n1, n2) => {
-    return n1-n2;
-}
-
-const multiplicar: MathFunction = (n1, n2) => {
-    return n1*n2;
-}
-
-const dividir: MathFunction = (n1,n2) => {
-    return n1/n2;
+const funcaoQualquer: TypeFuncao = () => {
+        return true;
 }
