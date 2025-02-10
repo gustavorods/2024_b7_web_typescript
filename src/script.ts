@@ -1,19 +1,17 @@
-// Função que faz a requisição
-function fazerReq(url: string, method: 'GET' | 'POST') {
-    // ...
+type MathFunction = (n1:number, n2:number) => number; // recebe dois parametros numericos e retorna um número
+
+const somar: MathFunction = (n1,n2) => { // geralmente quando usamos type functions, usamos const
+    return n1+n2;
 }
 
-// Uma estrutura para nosso objeto
-type RequestDetails = { 
-    url: string,
-    method: 'GET' | 'POST'
+const subtrair: MathFunction = (n1, n2) => {
+    return n1-n2;
 }
 
-// Objeto usando como base uma estrutura ja feita
-let config: RequestDetails =  {
-    url: "https://google.com.br",
-    method: "GET"
+const multiplicar: MathFunction = (n1, n2) => {
+    return n1*n2;
 }
 
-
-fazerReq(config.url, config.method);
+const dividir: MathFunction = (n1,n2) => {
+    return n1/n2;
+}
