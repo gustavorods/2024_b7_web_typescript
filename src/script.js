@@ -1,1 +1,2 @@
-var nome = "Rodrigo";
+"use strict";
+let nome = "Rodrigo";
