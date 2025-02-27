@@ -1,18 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es2016",                                  
+    "target": "ES6",                                  
     "module": "commonjs",                              
     "esModuleInterop": true,                             
     "forceConsistentCasingInFileNames": true,            
     "strict": true,                                  
-    "skipLibCheck": true                                 
+    "skipLibCheck": true,
+    "lib": [ // 
+      "DOM",
+      "ES5",
+      "ScriptHost",
+      "DOM.Iterable"
+    ]
   },
-  "exclude": [
-    "**/*.dev.ts", // excluindo qualquer arquivo de qualquer pasta que terminar com ".dev.ts"
-    "node_modules" // ignora essa pasta (mas ele faz isso automaticamente, então não precisa colocar essa configuração)
-  ],
-  "include": [
-    "src/*", // vai compilar somente esse arquivo
-    "app.ts"
-  ]
 }
