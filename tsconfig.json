@@ -4,13 +4,15 @@
     "module": "commonjs",                              
     "esModuleInterop": true,                             
     "forceConsistentCasingInFileNames": true,            
-    "strict": true,                                  
+    "strict": true,        
+    "outDir": "./public/assets/js", // se o diretorio nao existir, ele vai criar um 
+    "rootDir": "./src",      
+    "removeComments": true, 
+    "noEmitOnError": true, 
     "skipLibCheck": true,
-    "lib": [ // 
-      "DOM",
-      "ES5",
-      "ScriptHost",
-      "DOM.Iterable"
-    ]
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true
   },
 }
